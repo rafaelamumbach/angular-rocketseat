@@ -1,0 +1,20 @@
+.custom-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.custom-subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #64748B;
+}
+
+.content-tiles {
+  height: 60px; /*continuacao: 09:09*/
+}

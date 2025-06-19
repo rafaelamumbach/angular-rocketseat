@@ -1,3 +1,3 @@
 ---
-# Projeto Angular - Curso introdutório [Rocketseat]
+### Projeto Angular - Curso introdutório [Rocketseat]
 ---

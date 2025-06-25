@@ -17,4 +17,16 @@
 
 .content-tiles {
   height: 60px;
+  gap: 4px;
+  margin-bottom: 32px;
+}
+
+.custom-card{
+  gap: 20px;
+  border-radius: 8px;
+  border: 1px solid #E2E8F0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 32px 56px 32px; /*em cima, direita, embaixo, esquerda*/
 }

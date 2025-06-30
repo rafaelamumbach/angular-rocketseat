@@ -14,3 +14,4 @@ Até o momento, foi desenvolvido:
 - ✅ Lista de certificados gerados  
 - ✅ Interface base de usabilidade do usuário  
 - ✅ Página de lista dos certificados (vazia ou com certificados gerados)
+- ✅ Lista de atividades do cerificado (que acompanha a lista dos certificados)

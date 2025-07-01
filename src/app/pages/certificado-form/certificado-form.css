@@ -42,12 +42,55 @@ label {
 }
 
 .item-list hr {
+  all: unset;
+  display: block;
+  height: 1px;
+  background-color: #E2E8F0;
   margin: 12px;
 }
 
 .remove-btn i {
   padding: 5.75px;
   color: #E95F5F;
+  font-size: 12.5px;
+  border-radius: 4px;
 }
 
-/*ultima modificacao: cor do botao 'x'*. continuar de -7:20; https://app.rocketseat.com.br/classroom/fundamentos-do-angular/group/componentes-3/lesson/lista-de-atividades-do-formulario/
+.remove-btn i:hover {
+  background-color: #E2E8F0;
+  cursor: pointer;
+}
+
+.custom-input {
+  border: 1px solid #E2E8F0;
+  border-radius: 6px;
+  padding: 8px 12px; /*em cima e embaixo; esquerda e direita*/
+  height: 40px;
+}
+
+.custom-input:focus {
+  border: 1px solid #3B5AC2;
+  box-shadow: none;
+}
+
+.custom-input-group:has(input:focus) label {
+  color: #3B5AC2;
+}
+
+.error-message {
+  gap: 4px;
+  color: #D71D1D;
+  margin-top: 8px;
+}
+
+.error-message p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+
+.custom-input-group:has(.error-message) label {
+  color: #D71D1D;
+}

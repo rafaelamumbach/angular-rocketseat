@@ -1,27 +1,4 @@
-.custom-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: 0;
-  text-align: center;
-}
-
-.custom-subtitle {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0;
-  text-align: center;
-  color: #64748B;
-}
-
-.content-tiles {
-  height: 60px;
-  gap: 4px;
-  margin-bottom: 32px;
-}
-
-.custom-card{
+.custom-card {
   max-width: 672;
   gap: 20px;
   border-radius: 8px;
@@ -38,11 +15,11 @@
 }
 
 
-.custom-warning-titles{
+.custom-warning-titles {
   gap: 2px;
 }
 
-.card-title{
+.card-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -51,11 +28,15 @@
   color: #1A2856;
 }
 
-.card-subtitle{
+.card-subtitle {
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0;
   text-align: center;
   color: #64748B;
+}
+
+.list-certificates {
+  max-width: 672;
 }

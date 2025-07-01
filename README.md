@@ -17,3 +17,5 @@ Até o momento, foi desenvolvido:
 - ✅ Lista de atividades do certificado (que acompanha a lista dos certificados)
 - ✅ Estilização da lista de atividades, navbar e inputs da tela de gerar certificado
 - ✅ Estilização dos inputs, com mudanças de cor nos labels e tratativa de erro (mensagem)
+- ✅ Página de certificado gerado com botão de download e estilizações gerais do certificado
+- ✅ Informações do certificado gerado (título, nome, texto (lista de atividades) e assinatura do responsável)

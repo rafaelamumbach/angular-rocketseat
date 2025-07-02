@@ -2,6 +2,8 @@
   background-color: #fff;
   padding: 1rem 2rem;
   border-bottom: 1px solid #E2E8F0;
+  padding-right: 28px;
+  padding-left: 12px;
 }
 
 .navbar-logo img{
@@ -13,5 +15,19 @@
 }
 
 .nav-link.active{
+  color: #3B5AC2;
+  font-weight: 600;
+}
+
+.nav-item {
+  cursor: pointer;
+  margin-left: 6px !important;
+}
+
+.nav-item i {
+  font-size: 20px;
+}
+
+.nav-item:has(> a.nav-link.active) {
   color: #3B5AC2;
 }

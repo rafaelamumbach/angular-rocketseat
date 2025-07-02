@@ -20,7 +20,7 @@ Você pode encontrar ele em: [https://app.rocketseat.com.br/journey/angular-curs
 - ✅ Página de certificado gerado com botão de download e estilizações gerais do certificado
 - ✅ Informações do certificado gerado (título, nome, texto (lista de atividades) e assinatura do responsável)
 - ✅ Aplicação da fonte global no projeto (Inter) e no nome do aluno (Dancing Script), ambas fontes disponíveis no Google Fonts
-- ✅ Ajustes gerais em todos os componentes criados para garantir a completa fidelidade com o projeto no Figma (espaçamento, cores, etc)
+- ✅ Ajustes gerais em todos os componentes para garantir a completa fidelidade com o projeto no Figma (espaçamento, cores, etc)
 
 ###### ℹ️ Módulo 2 | Criando Rotas da Aplicação
 - ✅ Criação das rotas das páginas através do `app.routes.ts`

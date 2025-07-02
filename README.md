@@ -6,8 +6,8 @@ Você pode encontrar ele em: [https://app.rocketseat.com.br/journey/angular-curs
 
 ---
 
-Até o momento, foi desenvolvido:
-
+#####Até o momento, foi desenvolvido:
+######ℹ️ Módulo 1 | Criação de Componentes
 - ✅ Navbar  
 - ✅ Botão primário  
 - ✅ Botão secundário  
@@ -19,3 +19,9 @@ Até o momento, foi desenvolvido:
 - ✅ Estilização dos inputs, com mudanças de cor nos labels e tratativa de erro (mensagem)
 - ✅ Página de certificado gerado com botão de download e estilizações gerais do certificado
 - ✅ Informações do certificado gerado (título, nome, texto (lista de atividades) e assinatura do responsável)
+- ✅ Aplicação da fonte global no projeto (Inter) e no nome do aluno (Dancing Script), ambas fontes disponíveis no Google Fonts
+- ✅ Ajustes gerais em todos os componentes criados para garantir a completa fidelidade com o projeto no Figma (espaçamento, cores, etc)
+
+######ℹ️ Módulo 2 | Criando Rotas da Aplicação
+- ✅ Criação das rotas das páginas através do `app.routes.ts`
+- ✅ Criação das rotas para navegar entre as páginas utilizando `RouterLink`

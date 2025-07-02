@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-
 import { ItemCertificado } from "../../_components/item-certificado/item-certificado";
+
 
 @Component({
   selector: 'app-certificados',
@@ -9,5 +9,5 @@ import { ItemCertificado } from "../../_components/item-certificado/item-certifi
   styleUrl: './certificados.css'
 })
 export class Certificados {
-
+  
 }

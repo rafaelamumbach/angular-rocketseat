@@ -1,36 +1,72 @@
-<div class="d-flex flex-column align-items-center"></div>
+<form #form="ngForm" novalidate class="d-flex flex-column align-items-center">
   <div class="content-titles">
     <h1 class="fw-bold custom-title">Geração de certificado</h1>
-    <p class="mb-4 custom-subtitle">Preencha os dados para gerar um novo certificado</p>
+    <p class="mb-4 custom-subtitle">Preencha os dados para gerar um novo
+      certificado</p>
   </div>
   <div class="custom-card w-100">
     <h2 class="card-title">Novo certificado</h2>
     <div class="mb-3 custom-input-group">
       <label for="nome" class="form-label">Nome</label>
-      <input id="nome" type="text" class="form-control custom-input" placeholder="Nome do aluno">
+      <input [(ngModel)]="nome" #nomeRef="ngModel" maxlength="150" required
+        name="nome" id="nome" type="text" class="form-control custom-input"
+        placeholder="Nome do aluno">
+      @if (nomeRef.invalid && nomeRef.touched) {
+      @if (nomeRef.errors?.['required']) {
       <div class="error-message d-flex align-items-center">
         <i class="ph ph-warning-circle"></i>
-        <p class="m-0">Error message</p>
+        <p class="m-0">O nome do aluno é obrigatório!</p>
       </div>
+      }
+      @if (nomeRef.errors?.['maxlength']) {
+      <div class="error-message d-flex align-items-center">
+        <i class="ph ph-warning-circle"></i>
+        <p class="m-0">O nome do aluno deve ter, no máximo, 150 caracteres.</p>
+      </div>
+      }
+      }
     </div>
     <div class="mb-3 d-flex align-items-end custom-input-group">
       <div class="flex-grow-1 me-2">
         <label for="atividade" class="form-label">Atividade</label>
-        <input id="atividade" type="text" class="form-control custom-input" placeholder="Atividade exercida">
+        <input #atividadeRef="ngModel" maxlength="50" [(ngModel)]="atividade"
+          name="atividade" id="atividade" type="text"
+          class="form-control custom-input"
+          placeholder="Atividade exercida">
+        @if (nomeRef.invalid && nomeRef.touched) {
+        @if (nomeRef.errors?.['required']) {
+        <div class="error-message d-flex align-items-center">
+          <i class="ph ph-warning-circle"></i>
+          <p class="m-0">O nome do aluno é obrigatório!</p>
+        </div>
+        }
+        @if (nomeRef.errors?.['maxlength']) {
+        <div class="error-message d-flex align-items-center">
+          <i class="ph ph-warning-circle"></i>
+          <p class="m-0">O nome do aluno deve ter, no máximo, 150
+            caracteres.</p>
+        </div>
+        }
+        }
       </div>
       <app-secondary-button></app-secondary-button>
     </div>
     <div class="atividade-group">
       <label class="form-label">Lista de atividades</label>
       <div class="item-list w-100">
+        @for (atividade of atividades; track $index) {
         <div class="item">
-          <span class="item-text">Configuração com Angular CLI</span>
+          <span class="item-text">{{atividade}}</span>
           <div class="remove-btn">
             <i class="ph-bold ph-x remove-btn"></i>
           </div>
         </div>
+        @if (!$last) {
+        <hr>
+        }
+        }
       </div>
     </div>
-    
-  <app-primary-button></app-primary-button>
-</div>
+    <app-primary-button></app-primary-button>
+  </div>
+</form>

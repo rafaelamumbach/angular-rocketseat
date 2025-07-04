@@ -11,45 +11,30 @@
       <input [(ngModel)]="nome" #nomeRef="ngModel" maxlength="150" required
         name="nome" id="nome" type="text" class="form-control custom-input"
         placeholder="Nome do aluno">
-      @if (nomeRef.invalid && nomeRef.touched) {
-      @if (nomeRef.errors?.['required']) {
+      @if (campoValido(nomeRef)) {
       <div class="error-message d-flex align-items-center">
         <i class="ph ph-warning-circle"></i>
         <p class="m-0">O nome do aluno é obrigatório!</p>
       </div>
       }
-      @if (nomeRef.errors?.['maxlength']) {
-      <div class="error-message d-flex align-items-center">
-        <i class="ph ph-warning-circle"></i>
-        <p class="m-0">O nome do aluno deve ter, no máximo, 150 caracteres.</p>
-      </div>
-      }
-      }
     </div>
     <div class="mb-3 d-flex align-items-end custom-input-group">
       <div class="flex-grow-1 me-2">
         <label for="atividade" class="form-label">Atividade</label>
-        <input #atividadeRef="ngModel" maxlength="50" [(ngModel)]="atividade"
+        <input #atividadeRef="ngModel" maxlength="50" [(ngModel)]="atividade" required
           name="atividade" id="atividade" type="text"
           class="form-control custom-input"
           placeholder="Atividade exercida">
-        @if (nomeRef.invalid && nomeRef.touched) {
-        @if (nomeRef.errors?.['required']) {
+        @if (campoValido(atividadeRef)) {
         <div class="error-message d-flex align-items-center">
           <i class="ph ph-warning-circle"></i>
-          <p class="m-0">O nome do aluno é obrigatório!</p>
+          <p class="m-0">O nome da atividade é obrigatório!</p>
         </div>
-        }
-        @if (nomeRef.errors?.['maxlength']) {
-        <div class="error-message d-flex align-items-center">
-          <i class="ph ph-warning-circle"></i>
-          <p class="m-0">O nome do aluno deve ter, no máximo, 150
-            caracteres.</p>
-        </div>
-        }
         }
       </div>
-      <app-secondary-button></app-secondary-button>
+      <app-secondary-button
+      [ngStyle]="campoValido(atividadeRef) ? {'margin-bottom': '24px'} : {}">
+    </app-secondary-button>
     </div>
     <div class="atividade-group">
       <label class="form-label">Lista de atividades</label>

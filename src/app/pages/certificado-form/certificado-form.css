@@ -1,9 +1,10 @@
 .custom-card {
-  max-width: 672;
+  max-width: 672px;
   gap: 32px;
   border-radius: 8px;
   border: 1px solid #E2E8F0;
-  padding: 32px; /*em todo o conteudo*/
+  padding: 32px;
+  /*em todo o conteudo*/
 }
 
 .card-title {
@@ -32,7 +33,7 @@ label {
   border: 1px solid #E2E8F0;
   border-radius: 8px;
   padding: 16px;
-  gap: 12px
+  gap: 12px;
 }
 
 .item {
@@ -46,7 +47,7 @@ label {
   display: block;
   height: 1px;
   background-color: #E2E8F0;
-  margin: 12px;
+  margin: 12px 0;
 }
 
 .remove-btn i {
@@ -64,7 +65,8 @@ label {
 .custom-input {
   border: 1px solid #E2E8F0;
   border-radius: 6px;
-  padding: 8px 12px; /*em cima e embaixo; esquerda e direita*/
+  padding: 8px 12px;
+  /*em cima e embaixo; esquerda e direita*/
   height: 40px;
 }
 

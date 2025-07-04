@@ -1,4 +1,4 @@
-.custom-buttom {
+.custom-button {
   height: 40px;
   padding: 10px 16px;
   border: none;
@@ -13,10 +13,10 @@
   font-weight: 600;
 }
 
-.custom-buttom:hover {
+.custom-button:hover {
   opacity: 90%;
 }
 
-.custom-buttom i {
+.custom-button i {
   font-size: 20px;
 }

@@ -19,4 +19,3 @@ export class Certificado implements OnInit{
     console.log(this.certificadoService.getCertificados());
   }
 }
-/*-00:37*/

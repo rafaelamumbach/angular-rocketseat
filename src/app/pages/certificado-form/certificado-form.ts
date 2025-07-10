@@ -29,7 +29,7 @@ export class CertificadoForm {
 
 
   campoValido(control: NgModel){
-    return control.invalid && control.touched
+    return control.invalid && control.touched;
   }
 
   formValido(){

@@ -1,7 +1,7 @@
-### Projeto Angular - Curso introdutório [Rocketseat]
+### Projeto Angular - Curso introdutório **[Rocketseat](https://www.rocketseat.com.br/)**
 
 ℹ️ Este repositório tem como finalidade armazenar o conhecimento obtido através do curso introdutório e gratuito sobre Angular, oferecido pela Rocketseat.  
-Você pode encontrar ele em: [https://app.rocketseat.com.br/journey/angular-curso-introdutorio/contents](https://app.rocketseat.com.br/journey/angular-curso-introdutorio/contents)
+Você pode encontrar ele em: **[Angular - Curso Introdutório](https://app.rocketseat.com.br/journey/angular-curso-introdutorio/contents)**
 
 ---
 
